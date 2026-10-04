@@ -293,7 +293,7 @@ PAGES = [
         "description": "Meet TMO IT, your partner for full-stack development, content platforms, data analytics, e-commerce, design and quality assurance.",
         "eyebrow": "About TMO IT",
         "heading": "All the digital capabilities. <span>One connected team.</span>",
-        "intro": "TMO IT brings full-stack development, content management, data analytics, commerce, product design and quality assurance together to help teams move from a business need to a working digital experience.",
+        "intro": "Previously presented as RGBAPlus, TMO IT is the next chapter of our digital services work—bringing full-stack development, content management, data analytics, commerce, product design and quality assurance together to help teams turn business needs into working digital experiences.",
         "sections": [
             ("Full-cycle digital delivery", "From discovery, UX and architecture through development, integration, QA, launch and support, keep the work connected instead of coordinating disconnected suppliers."),
             ("More than a website build", "Make content easier to publish, make data easier to understand, and create e-commerce journeys that support customers from discovery through checkout."),
