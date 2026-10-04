@@ -1,0 +1,21 @@
+Options -Indexes
+RewriteEngine On
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.tmo\.it$ [NC]
+RewriteRule ^ https://tmo.it%{REQUEST_URI} [R=301,L,NE]
+
+# Preserve search value and bookmarks from the previous .html URLs.
+RewriteRule ^index\.html$ / [R=301,L,NE]
+RewriteRule ^quality-assurance\.html$ /quality-assurance-testing/ [R=301,L,NE]
+RewriteRule ^staff-augmentation\.html$ /it-staff-augmentation/ [R=301,L,NE]
+RewriteRule ^ui-ux-design\.html$ /product-design/ [R=301,L,NE]
+RewriteRule ^website-migrations\.html$ /website-migration/ [R=301,L,NE]
+RewriteRule ^terms-of-service\.html$ /terms-of-use/ [R=301,L,NE]
+RewriteRule ^([a-z0-9-]+)\.html$ /$1/ [R=301,L,NE]
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
